@@ -2,15 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ReportHealthOnChange : MonoBehaviour {
+[RequireComponent(typeof(Living))]
+public class ReportHealthOnChange : MonoBehaviour
+{
+  private Living m_Living;
+  
+  public void Awake() {
+    m_Living = this.GetComponent<Living>();
+  }
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+  public void OnHealthChanged(float health_delta) {
+    Debug.Log(this.gameObject.name + "'s health changed by " + health_delta + " to " + m_Living.Health);
+  }
 }
