@@ -313,7 +313,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_MaximumHealth: 100
-  m_Health: 100
+  m_Health: 115
   m_AllowOverhealth: 1
   m_OverhealthDrainSpeed: 2
 --- !u!54 &1158804761
