@@ -2,15 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DeleteOnDeath : MonoBehaviour {
-
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+public class DeleteOnDeath : MonoBehaviour
+{
+  public float DestroyDelay = 1.0f;
+  
+  public void OnDeath() {
+    Destroy(this.gameObject, DestroyDelay);
+  }
 }
