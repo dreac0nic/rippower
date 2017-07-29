@@ -69,7 +69,7 @@ public class Living : MonoBehaviour
       if(m_AllowOverhealth && m_OverhealthDrainSpeed != 0.0f) {
 	delta = m_OverhealthDrainSpeed*Time.deltaTime;
 	target = m_Health - delta;
-      } else {
+      } else if(!m_AllowOverhealth) {
 	delta = m_Health - m_MaximumHealth;
 	target = m_MaximumHealth;
       }
