@@ -292,6 +292,8 @@ GameObject:
   - component: {fileID: 1158804762}
   - component: {fileID: 1158804761}
   - component: {fileID: 1158804760}
+  - component: {fileID: 1158804764}
+  - component: {fileID: 1158804763}
   m_Layer: 0
   m_Name: George
   m_TagString: Untagged
@@ -343,6 +345,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1158804763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1158804759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55b780b9154fe46d19bf124b0c319390, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DestroyDelay: 1
+--- !u!114 &1158804764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1158804759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 736547957658d418b8d6edf830726a28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1691138330
 GameObject:
   m_ObjectHideFlags: 0
@@ -353,6 +378,8 @@ GameObject:
   - component: {fileID: 1691138333}
   - component: {fileID: 1691138332}
   - component: {fileID: 1691138331}
+  - component: {fileID: 1691138335}
+  - component: {fileID: 1691138334}
   m_Layer: 0
   m_Name: Ryan
   m_TagString: Untagged
@@ -404,6 +431,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1691138334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1691138330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55b780b9154fe46d19bf124b0c319390, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DestroyDelay: 1
+--- !u!114 &1691138335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1691138330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 736547957658d418b8d6edf830726a28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1994145281
 GameObject:
   m_ObjectHideFlags: 0
@@ -564,6 +614,7 @@ GameObject:
   - component: {fileID: 2117526285}
   - component: {fileID: 2117526284}
   - component: {fileID: 2117526283}
+  - component: {fileID: 2117526287}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -635,3 +686,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 36.103, y: 0, z: 0}
+--- !u!114 &2117526287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2117526282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d58bf668f5b44d7eb5dbe044a088590, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 5
+  Distance: 100
+  ButtonName: Fire1
