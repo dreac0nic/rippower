@@ -67,7 +67,7 @@ public class Living : MonoBehaviour
 
       // Calculate new health values based on characteristics
       if(m_AllowOverhealth && m_OverhealthDrainSpeed != 0.0f) {
-	delta = m_OverhealthDrainSpeed*Time.deltaTime;
+	delta = Mathf.Clamp(m_Health - m_MaximumHealth, 0, m_OverhealthDrainSpeed*Time.deltaTime);
 	target = m_Health - delta;
       } else if(!m_AllowOverhealth) {
 	delta = m_Health - m_MaximumHealth;
